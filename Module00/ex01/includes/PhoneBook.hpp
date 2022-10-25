@@ -3,31 +3,34 @@
 /*                                                        :::      ::::::::   */
 /*   PhoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lbounor <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: Leo <Leo@student.42lyon.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 17:12:01 by lbounor           #+#    #+#             */
-/*   Updated: 2022/10/25 17:16:14 by lbounor          ###   ########lyon.fr   */
+/*   Updated: 2022/10/25 23:46:10 by Leo              ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHONEBOOK_HPP
 # define PHONEBOOK_HPP
 
+# include "Contact.hpp"
+
 class PhoneBook
 {
+
 private:
-	/* data */
+	
+	Contact		contact[8];
+	int			_index;
+	
 public:
-	PhoneBook(/* args */);
+
+	PhoneBook();
 	~PhoneBook();
+
+	void	add();
+	void	search();
+	
 };
-
-PhoneBook::PhoneBook(/* args */)
-{
-}
-
-PhoneBook::~PhoneBook()
-{
-}
 
 #endif
