@@ -6,7 +6,7 @@
 /*   By: Leo <Leo@student.42lyon.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 17:12:01 by lbounor           #+#    #+#             */
-/*   Updated: 2022/10/25 23:46:10 by Leo              ###   ########lyon.fr   */
+/*   Updated: 2022/10/26 13:49:13 by Leo              ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,13 @@ private:
 	
 public:
 
-	PhoneBook();
-	~PhoneBook();
+	PhoneBook(void);
+	~PhoneBook(void);
 
-	void	add();
-	void	search();
-	
+	void			add(void);
+	void			search(void);
+	std::string		ft_getline(void);
+	void			print_phonebook(void);
 };
 
 #endif
