@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   Contact.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Leo <Leo@student.42lyon.fr>                +#+  +:+       +#+        */
+/*   By: lbounor <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 17:12:45 by lbounor           #+#    #+#             */
-/*   Updated: 2022/10/25 23:34:34 by Leo              ###   ########lyon.fr   */
+/*   Updated: 2022/10/27 10:08:37 by lbounor          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Contact.hpp"
+#include "../includes/Contact.hpp"
 #include <iostream>
 
 //				---CONSTRUCTOR---

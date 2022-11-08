@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PhoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Leo <Leo@student.42lyon.fr>                +#+  +:+       +#+        */
+/*   By: lbounor <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 17:12:01 by lbounor           #+#    #+#             */
-/*   Updated: 2022/10/26 13:49:13 by Leo              ###   ########lyon.fr   */
+/*   Updated: 2022/10/27 13:38:57 by lbounor          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,9 @@ public:
 
 	void			add(void);
 	void			search(void);
-	std::string		ft_getline(void);
+	std::string		ft_setline(void);
 	void			print_phonebook(void);
+	void			print_contact(int index);
 };
 
 #endif
