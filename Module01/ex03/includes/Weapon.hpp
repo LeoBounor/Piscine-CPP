@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lbounor <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: Leo <Leo@student.42lyon.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 13:25:32 by lbounor           #+#    #+#             */
-/*   Updated: 2022/11/08 14:24:05 by lbounor          ###   ########lyon.fr   */
+/*   Updated: 2023/01/04 09:29:06 by Leo              ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,11 @@ private:
 	
 public:
 	Weapon(void);
+	Weapon(const std::string &type);
 	~Weapon(void);
 	
-	std::string		getType(void);
-	void			setType(std::string type);
+	const std::string	&getType(void) const;
+	void				setType(const std::string &type);
 	
 };
 

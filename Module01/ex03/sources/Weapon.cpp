@@ -3,31 +3,35 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lbounor <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: Leo <Leo@student.42lyon.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 14:21:21 by lbounor           #+#    #+#             */
-/*   Updated: 2022/11/08 14:23:34 by lbounor          ###   ########lyon.fr   */
+/*   Updated: 2023/01/05 16:20:36 by Leo              ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
+#include <Weapon.hpp>
 
 Weapon::Weapon()
 {
-	return ;
+	std::cout << "Default constructor called for Weapon class." << std::endl;
+}
+
+Weapon::Weapon(const std::string &type) {
+	this->_type = type;
 }
 
 Weapon::~Weapon()
 {
-	return ;
+	std::cout << "Destructor called for Weapon class." << std::endl;
 }
 
-std::string	Weapon::getType()
+const std::string	&Weapon::getType() const
 {
 	return (this->_type);
 }
 
-void	Weapon::setType(std::string type)
+void	Weapon::setType(const std::string &type)
 {
 	this->_type = type;
 }
